@@ -1,0 +1,36 @@
+[
+    {
+        "name": "HTML Page", 
+        "language": "HTML", 
+        "image": "", 
+        "website": "https://codepen.io/Xintong-Du/pen/zYjqjEb"
+    },
+
+    {
+        "name": "Go Page", 
+        "language": "HTML & CSS", 
+        "image": "", 
+        "website": "https://codepen.io/Xintong-Du/pen/GRdWyee"
+    },
+    
+    {
+        "name": "To Do List", 
+        "language": "JavaScript", 
+        "image": "", 
+        "website": "https://merry-sherbet-5c2ed8.netlify.app/"
+    },
+
+    {
+        "name": "FizzBuzz Game", 
+        "language": "JavaScript", 
+        "image": "", 
+        "website": "https://rad-mochi-7e642c.netlify.app"
+    }, 
+
+    {
+        "name": "Guessing Game", 
+        "language": "JavaScript", 
+        "image": "", 
+        "website": "https://hilarious-donut-d06689.netlify.app"
+    }
+]
