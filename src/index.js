@@ -5,8 +5,6 @@ import {Home, About, Projects} from "./pages/index.js"
 import Footer from "./components/Footer.js"
 import Navbar from "./components/Navbar.js"
 import Button from './components/Button.js'
-// import "../styles/footer.css"
-import "./styles/footer.css"
 import "./style.css"
 
 const App = () => {
@@ -14,13 +12,16 @@ const App = () => {
     <div className="App">
       <Router>
         <Navbar />
+        <div className='buttonDiv'>
+          <Button />
+        </div>
+
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/about' element={<About />} />
         </Routes>
       </Router>
-      <Button />
       <Footer />
     </div>
   )

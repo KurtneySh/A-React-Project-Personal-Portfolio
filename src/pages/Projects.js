@@ -5,7 +5,7 @@ import GoPage from "../media/GoPage.png"
 import ToDoList from "../media/ToDoList.png"
 import FizzBuzz from "../media/FizzBuzz.png"
 import GuessingGame from "../media/GuessingGame.png"
-import "../styles/project.css"
+import NFTEngine from "../media/NFTEngine.png"
 
 const Projects = () => {
   const imageUrl = [
@@ -13,7 +13,8 @@ const Projects = () => {
     GoPage,
     ToDoList,
     FizzBuzz,
-    GuessingGame
+    GuessingGame,
+    NFTEngine
   ]
 
   for (let i = 0; i < imageUrl.length; i++) {
@@ -22,17 +23,15 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-      <h1>My Personal Projects</h1>
+      <h1 style={{textAlign: "center"}}>My Personal Projects</h1>
       <div className='projectList'>
         {
           ProjectList.map((project) =>{
             return (
               <div className='projectItem'>
-                <img src={project.image} className="projectImage" />
-                <a href={project.website} target="_blank">
-                  <div>{project.name}</div>
-                </a>
-                <div>language: {project.language}</div>
+                <img src={project.image} />
+                <div className='details'>Name: <a href={project.website} target="_blank">{project.name}</a></div>
+                <div className='details'>Language: {project.language}</div>
               </div>
             )
           })
