@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content a {
+    color: black;
+}
+
+.header {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom right, rgb(89, 89, 247), rgb(239, 121, 121));
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.container, .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px dotted white;
+}
+
+
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.subtitle {
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    text-shadow: 1px 1px black;
+
+}
+
+input, button {
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.inputContent {
+    margin-top: 20px;
+    width: 600px;
+}
+
+.searchingText {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.searchingResult {
+    width: 100%;
+    min-height: 250px;
+    padding-top: 20px;
+    font-weight: normal;
+    background-image:linear-gradient(#eee, #aaa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchingResult p {
+    text-align: center;
+}
+
+.nftContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.nftCardContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    margin: 5px 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.nftCardContainer:hover {
+    box-shadow: 1px 2px 5px 2px grey;
+}
+
+.nftCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.attributes {
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 550px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    .inputContent {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .searchingText {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .nftContainer {
+        font-size: 8px;
+    }
+
+    .nftCardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    .nftCardContainer {
+        width: 70%;
+    }
+
+    .content img {
+        width: 80%;
+        height: 80%;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 850px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .inputContent {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .searchingText {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .nftCardContainer {
+        min-width: 40%;
+        max-width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+    }
+
+    .content img {
+        width: 80%;
+        height: 80%;
+        border-radius: 30px;
+    }
+}
